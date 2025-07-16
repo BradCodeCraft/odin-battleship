@@ -1,0 +1,98 @@
+@import url("./assets/fonts/stylesheet.css");
+@import url("./reset.css");
+
+body {
+  background-color: midnightblue;
+  color: cornflowerblue;
+  font-family: "playfair_displayregular", sans-serif;
+}
+
+button {
+  font-size: 1.4rem;
+  background-color: cornflowerblue;
+  color: midnightblue;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+button:active {
+  scale: 0.92;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player-creation-container {
+  display: flex;
+}
+
+.player-creation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-creation-form label {
+  font-size: 1.8rem;
+}
+
+.player-creation-form input {
+  padding: 4px;
+}
+
+.boards-container,
+.player-board,
+.computer-board {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.row div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  background-color: royalblue;
+  border: 2px solid midnightblue;
+}
+
+.ship {
+  background-color: darkgrey;
+}
+
+.hit {
+  background-color: red;
+}
+
+.miss {
+  background-color: dimgrey;
+}
+
+.opponent {
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.opponent:active {
+  scale: 0.92;
+}
+
+.winner-container {
+  flex-direction: column;
+  justify-content: center;
+}
